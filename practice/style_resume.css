@@ -1,0 +1,200 @@
+/*
+selector {
+    property : value
+}
+
+order : top -> bottom
+last order win everytime!!
+
+block & inline
+almost box(div, article, header....) is block by default.
+<a>, <img>, <span> is inline by default.
+(display:inline) -> no width neither height.
+but (display:block) has : width + heigh
+    - margin : space from the border to the OUTSIDE
+        => inline can't have margin(top-bottom)!!
+    - border
+    - padding : space from the border to the INSIDE
+
+ex:
+      * {
+        border: 2px solid rgb(150, 144, 144);
+      }
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px 10px;
+        background-color: thistle;
+        padding: 20px;
+      }
+      span {
+        border-style: dashed;
+      }
+
+(display:inline-block) ... too much problem like margin...
+
+(display:flex) : must be located in parents elements.
+      ex:
+      html:
+      <body>
+        <div></div>
+        <div></div>
+        <div></div>
+      </body>
+
+      CSS:
+      body {
+          display : flex;
+      } => OK, parfait.
+      div {
+          display : flex;
+      } => NO!!!!
+IN flexbox
+    - justify-content -> main axis(horizon)
+    :but able to change with "flex-drection:column" - default = "row"
+    - align-items -> cross axis(vertical)
+
+position :
+      - static: default
+      - fixed: always same place (even if scroll of page move)
+      - relative: 시작 위치에서 top, bottom 설정을 통해 포지션 변경
+        ex/ top:-10px.... etc
+      - absolute: find a parent which is "relative"
+      
+      ex: in this case, localization of #green is fixed by #parent
+      (NOT div which is more near than #parent.)
+      
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+      }
+      #green {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      #parent {
+        width: 500px;
+        height: 500px;
+        background-color: tomato;
+        position: relative;
+      }
+
+
+    pseudo selector
+    (tag):(option){
+        (order)
+    }
+    *option :
+        - first-child, last-child
+        - nth-child(n)
+    ex: 3의 배수 번째 태그 
+        span:nth-child(3n) {
+        background-color: red;
+        }
+
+
+30/12/2020
+    -(div) > (span) {} : div(parent) 바로 밑에 span(child)에 명령 
+    -(div) + (span) {} : div "바로 뒤 " next span(sisther)에게 명령
+    -(div) ~ (span) {} : div 후 나오는 모든 span에게 명령  
+    
+
+    pseudo selector
+    - input:optional {} : optional(required의 반대 개념)만 적용
+    - input:required { } : required만 적용 
+    
+    attribute selector :
+        - a[href*="exemple"]{}
+        - a[href~=""]{}
+        - etc
+        *ATTENTION : "~=" &  "*="는 거의 같으나
+        - ~=는 띄어쓰기를 기준으로 단어를 찾음
+            => 단어를 찾을 때 유용
+        - *=는 ""단어를 포함할때 적용
+    
+    states : button:active, button:hover ...etc
+
+    custom properties(variable)
+    :root {
+        --main-color: #cc00ee;
+        --border-color: 1px solid var(--main-color);
+    }
+
+    transition
+    <style>
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 30px;
+        
+        transition: background-color 10s ease-in-out, color 5s ease-in-out;
+        or 
+        transition: all 1s ease-in-out;
+        or 
+        transition: background-color 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        help - https://matthewlein.com/tools/ceaser
+
+      }
+      a:hover {
+        border-radius: 20px;
+        font-size: 55px;
+        color: tomato;
+        background-color: wheat;
+      }
+
+
+    animation :
+
+      @keyframes coinFlip {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+      or
+        0%{
+            ...
+        }
+        50%{
+            ...
+        }
+        100%{
+            ...
+        }
+
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        animation: coinFlip 2s ease-in-out infinite;
+      }
+
+      media query
+
+      @media screen and (min-width: 600px) and (max-width: 1200px) {
+        div {
+          background-color: wheat;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+
+    </style>
+*/
+
+h1 {
+  color: tomato;
+}
