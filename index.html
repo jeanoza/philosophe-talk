@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienvenu à Philosophe Talk</title>
+    <title>Philosophe Talk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -32,9 +32,13 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email ou numéro de télép hone portable" />
-      <input type="password" placeholder="Mot de passe" />
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        placeholder="Email ou numéro de téléphone portable"
+      />
+      <input name="password" type="password" placeholder="Mot de passe" />
       <input type="submit" value="Me connecter" />
       <a href="#">Mot de passe oublié</a>
     </form>
