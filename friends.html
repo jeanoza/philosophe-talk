@@ -1,6 +1,8 @@
 <!-- images
 sartre:
 https://la-philosophie.com/wp-content/uploads/2016/02/sartre.jpg.webp
+beauvoir:
+https://assets.lls.fr/pages/7384489/FRA.2de.Ch16.TEX.Photographie_Simone-de-Beauvoir.png
 camus:
 https://api.theatredelaville-paris.com/assets/w1500-h1500-q80/c40d489e/albert_camus.jpg
 spinoza:
@@ -29,7 +31,7 @@ https://www.ancient.eu/img/r/p/500x600/12436.jpg.avif?v=1608312605
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Philosophe Talk</title>
+    <title>Amis - Philosophe Talk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -51,13 +53,132 @@ https://www.ancient.eu/img/r/p/500x600/12436.jpg.avif?v=1608312605
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Amis</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Déployer les prénoms des amis
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://la-philosophie.com/wp-content/uploads/2016/02/sartre.jpg.webp"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Sartre</h4>
+            <h6 class="user-component__subtitle">
+              L'existence précède l'essence.
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column user-component__column--book">
+          <span> L'Être et le Néant</span>
+          <i class="fas fa-caret-square-right"></i>
+        </div>
+      </div>
+      <div class="friends-screen__favoris">
+        <div class="friends-screen__favoris-header">
+          <span>Favoris</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="
+https://assets.lls.fr/pages/7384489/FRA.2de.Ch16.TEX.Photographie_Simone-de-Beauvoir.png
+              "
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Castor
+              </h4>
+              <h6 class="user-component__subtitle">
+                On ne naît pas femme, on le devient.
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column--book">
+            <span>Le deuxième sexe</span>
+            <i class="fas fa-caret-square-right"></i>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://api.theatredelaville-paris.com/assets/w1500-h1500-q80/c40d489e/albert_camus.jpg "
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Camus
+              </h4>
+              <h6 class="user-component__subtitle">
+                Aujourd'hui, maman est morte...
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column--book">
+            <span>L'Étranger</span>
+            <i class="fas fa-caret-square-right"></i>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Spinoza.jpg/520px-Spinoza.jpg
+              "
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Spinoza
+              </h4>
+              <h6 class="user-component__subtitle">
+                vera religio e vana religio
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column--book">
+            <span>Etika</span>
+            <i class="fas fa-caret-square-right"></i>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="
+http://jfbradu.free.fr/GRECEANTIQUE/GRECE%20CONTINENTALE/ATHENES/socrate.jpg
+              "
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Socrate
+              </h4>
+              <h6 class="user-component__subtitle">
+                Je sais que je ne sais rien
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column--book">
+            <span>La République by Platon</span>
+            <i class="fas fa-caret-square-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
