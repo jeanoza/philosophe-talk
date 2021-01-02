@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -20,6 +21,15 @@
   margin-top: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
+}
+.user-component__book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 102%;
+  padding: 5px 10px;
+  border: 2px solid var(--green);
+  border-radius: 35px;
 }
 
 .user-component__subtitle .fa-exclamation-circle {

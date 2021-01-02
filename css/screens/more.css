@@ -31,12 +31,17 @@
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+.more-suggestions__icon-image img {
+  width: 120%;
+}
+.more-suggestions__icon-image .stop-covid {
+  width: 150%;
 }
 
 .more-suggestions__icon-image i {

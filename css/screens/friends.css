@@ -22,13 +22,17 @@
   padding: 0px var(--horizontal-space);
 }
 
-.friends-screen__channel {
+.friends-screen__favoris {
   margin-top: 20px;
   border-top: var(--main-border);
   padding-top: 15px;
 }
 
-.friends-screen__channel-header {
+.friends-screen__favoris .user-component {
+  margin-bottom: 10px;
+}
+
+.friends-screen__favoris-header {
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
@@ -54,11 +58,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 132px;
+  font-size: 170px;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
-/* #splash-screen span {
-  color: white;
-  font-size: 64px;
-} */
+#splash-screen .splash-screen__img {
+  width: 50vw;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+#splash-screen .philos-talk {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-font-color);
+  font-size: 32px;
+}
