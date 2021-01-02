@@ -1,12 +1,14 @@
 #friends-display-link {
-  /* position: fixed;
-  width: 100%; */
+  position: fixed;
+  width: 100%;
   display: block;
   text-align: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
   background-color: #fafafa;
   font-size: 18px;
   margin-bottom: 15px;
+  top: 105px;
+  z-index: 1;
 }
 
 #friends-display-link i {
@@ -14,17 +16,20 @@
 }
 
 .friends-screen {
+  position: absolute;
+  width: 100%;
+  margin-top: 165px;
   padding: 0px var(--horizontal-space);
 }
 
 .friends-screen__channel {
-  margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  border-top: var(--main-border);
   padding-top: 15px;
 }
 
 .friends-screen__channel-header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);

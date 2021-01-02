@@ -1,13 +1,13 @@
 .screen-header {
   display: flex;
-  /* to verifier position:fixed or not*/
-  /*
   position: fixed;
   width: 100%;
-   */
+  margin-top: 26px;
+  /* position: relative; */
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
+  margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -17,4 +17,11 @@
 
 .screen-header__icons span {
   margin-left: 25px;
+}
+
+.screen-header__dot {
+  position: absolute;
+  display: inline;
+  top: 25px;
+  right: 20px;
 }

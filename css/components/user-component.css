@@ -21,6 +21,11 @@
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.user-component__subtitle .fa-exclamation-circle {
+  color: tomato;
+}
+
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
@@ -38,5 +43,12 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }
