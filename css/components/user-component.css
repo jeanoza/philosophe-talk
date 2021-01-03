@@ -1,6 +1,6 @@
 .user-component {
   justify-content: space-between;
-  margin: 10px 0px;
+  margin-bottom: 10px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -22,6 +22,20 @@
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
+.user-component__book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 102%;
+  padding: 5px 10px;
+  border: 2px solid var(--green);
+  border-radius: 35px;
+}
+
+.user-component__subtitle .fa-exclamation-circle {
+  color: tomato;
+}
+
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
@@ -38,13 +52,13 @@
   font-weight: 400;
 }
 
-.user-component__column--book {
-  border: 1px solid var(--green);
-  display: block;
-  padding: 5px 10px;
-  max-width: 200px;
-  border-radius: 50px;
+.user-component__column:last-child {
+  color: var(--main-font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.user-component__column--book :last-child {
-  color: var(--green);
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }

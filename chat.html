@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Philosophe Talk</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Free</span>
+        <i class="fas fa-wifi"></i>
+        <!-- Wifi Icon By fontawesome-->
+      </div>
+      <div class="status-bar__column">
+        <span>03:19</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- Battery Icon -->
+        <i class="fas fa-bolt"></i>
+        <!-- Lightning Icon -->
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Socrate</h1>
+      </div>
+      <div class="alt-header__column">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-bars fa-lg"></i>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Vendredi, 1er Janvier, 2021</div>
+
+      <div class="message-row message-row--own" id="_1">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"
+              >Bonjour, mon grand philosophe. J'ai une question.<br />Que
+              savez-vous?</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row" id="_2">
+        <img
+          src="https://www.wikiberal.org/images/e/eb/Socrate.htm_asc001.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Socrate</span>
+          <div class="message__info">
+            <span class="message__bubble">Je sais que je ne sais rien.</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own" id="_3">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">...</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat__timestamp" id="_4">Sartre est parti(e).</div>
+    </main>
+
+    <form action="" class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Ecrivez un message..." />
+        <i class="far fa-smile-beam fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>Votre fenêtre est trop grande. Veuillez la diminuer.</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

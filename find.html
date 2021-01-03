@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Découvrir - Philosophe Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Free</span>
+        <i class="fas fa-wifi"></i>
+        <!-- Wifi Icon By fontawesome-->
+      </div>
+      <div class="status-bar__column">
+        <span>03:19</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- Battery Icon -->
+        <i class="fas fa-bolt"></i>
+        <!-- Lightning Icon -->
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Découvrir</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span>
+          <a href="settings.html"><i class="fas fa-cog fa-lg"></i> </a>
+        </span>
+        <div class="screen-header__dot dot"></div>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Amis recommandés</h6>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://pbs.twimg.com/profile_images/1308812357502668812/jSVlszOa_400x400.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Emmanuel Macron
+              </h4>
+              <h6 class="user-component__subtitle">
+                Président de la République
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <!-- TODO : Add Laotseu ChouangTseu...  -->
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Phénomenologie</h5>
+            <h6 class="open-post__hashtags">#descartes#hurssel#heidegger</h6>
+            <div class="open-post__members">
+              <img
+                src=" https://assets.lls.fr/pages/7384489/FRA.2de.Ch16.TEX.Photographie_Simone-de-Beauvoir.png "
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Edmund_Husserl_1900.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Taoïsme</h5>
+            <h6 class="open-post__hashtags">#Lao-Tseu#Tchouang-Tseu</h6>
+            <div class="open-post__members">
+              <img
+                src="https://media.senscritique.com/media/000009498147/150_200/Tchouang_Tseu.jpg"
+              />
+              <span class="open-post__member-count">1,65B members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lao_Tzu_-_Project_Gutenberg_eText_15250.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__dot dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Votre fenêtre est trop grande. Veuillez la diminuer.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
