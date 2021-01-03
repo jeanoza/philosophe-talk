@@ -3,11 +3,11 @@
   position: fixed;
   width: 100%;
   margin-top: 26px;
-  /* position: relative; */
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
   margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
 }
 
 .screen-header__title {
