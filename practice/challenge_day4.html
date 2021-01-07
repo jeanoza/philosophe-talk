@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge_day</title>
+    <style>
+      ul {
+        padding-left: 0px;
+        margin: 0px;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <ul>
+        <li>
+          <label id="first-name">First name</label>
+          <input
+            for="first-name"
+            required
+            type="text"
+            placeholder="First name"
+          />
+        </li>
+        <li>
+          <label id="last-name">Last name</label>
+          <input for="last-name" required type="text" placeholder="Last name" />
+        </li>
+        <li>
+          <label id="email">Email</label>
+          <input for="email" required type="email" placeholder="Email" />
+        </li>
+        <li>
+          <label id="username">Username</label>
+          <input for"username" required type="text" placeholder="Username" />
+        </li>
+        <li>
+          <label id="password">Password</label>
+          <input
+            for="password"
+            required
+            minlength="10"
+            type="password"
+            placeholder="Password"
+          />
+        </li>
+        <li>
+          <label id="birthday">Birth date</label>
+          <input for="birthday" required type="date" />
+        </li>
+        <li>
+          <label id="happy-level">How happy are you?</label>
+          <input for="happy-level" required type="range" list="tickmarks" />
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist>
+        </li>
+        <li>
+          <label id="fav-color">What is your fav. color?</label>
+          <input for="fav-color" required type="color" />
+        </li>
+      </ul>
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
