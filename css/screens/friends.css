@@ -50,7 +50,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--silver);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -62,16 +62,45 @@
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   animation-delay: 2s;
 }
+#splash-screen span {
+  font-family: "Hanalei Fill", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  margin: 0px 10px;
+  opacity: 0;
+  animation: eureka 1s ease-in-out forwards;
+}
+@keyframes eureka {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(2);
+  }
+}
 
-#splash-screen i {
-  color: #3b1e1e;
+#splash-screen span:nth-child(2) {
+  animation-delay: 0.1s;
 }
-#splash-screen .splash-screen__img {
-  position: absolute;
-  width: 50vw;
-  opacity: 0.7;
-  border-radius: 100%;
+#splash-screen span:nth-child(3) {
+  animation-delay: 0.2s;
 }
+#splash-screen span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#splash-screen span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+#splash-screen span:last-child {
+  animation-delay: 0.5s;
+}
+
 /* #splash-screen .philos-talk {
   position: absolute;
   display: flex;

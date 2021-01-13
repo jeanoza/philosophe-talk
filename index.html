@@ -33,14 +33,22 @@
       <input
         name="username"
         type="text"
+        required
         placeholder="Email ou numéro de téléphone portable"
       />
-      <input name="password" type="password" placeholder="Mot de passe" />
+      <input
+        name="password"
+        type="password"
+        required
+        placeholder="Mot de passe"
+        minlength="10"
+      />
       <input type="submit" value="Me connecter" />
       <a href="#">Mot de passe oublié</a>
     </form>
     <div id="no-mobile">
-      <span>Votre fenêtre est trop grande. Veuillez la diminuer.</span>
+      <div>Votre fenêtre est trop grande.</div>
+      <div>Son largeur ne doit pas dépasser 600px</div>
     </div>
     <script src="js/js-clock.js"></script>
     <script
