@@ -64,7 +64,7 @@
   justify-content: flex-end;
 }
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: var(--baseColor);
   color: white;
   border-radius: 15px;
   border-top-right-radius: 0px;
@@ -182,7 +182,7 @@
   right: 40px;
 }
 .reply__column:last-child button {
-  background-color: var(--yellow);
+  background-color: var(--baseColor);
   border: none;
   width: 30px;
   height: 30px;

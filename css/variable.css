@@ -1,5 +1,5 @@
 :root {
-  --yellow: #34495e;
+  --baseColor: #34495e;
   --green: #6ddb8a;
   --horizontal-space: 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
